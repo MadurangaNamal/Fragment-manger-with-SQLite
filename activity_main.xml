@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.user.app15.MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/fragmentBtn1"
+            android:text="Insert student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="FragBtn1Clicked"/>
+        <Button
+            android:id="@+id/fragmentBtn2"
+            android:text="view students"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="FragBtn2Clicked"/>
+        <Button
+            android:id="@+id/fragmentBtn3"
+            android:text="update student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="FragBtn3Clicked"/>
+        <Button
+            android:id="@+id/fragmentBtn4"
+            android:text="delete student"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="FragBtn4Clicked"/>
+
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/detailsFragment">
+
+    </FrameLayout>
+</LinearLayout>
